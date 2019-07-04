@@ -21,6 +21,7 @@
             width:  200px;
             height: 200px;
             background-color: green;
+            position: center;
         }
         
         
@@ -32,6 +33,14 @@
             justify-content: center;
             
             
+        }
+        
+        .centralizar{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+           
         }
         
        
@@ -65,11 +74,11 @@
     </script>
     </head>
     <body onload= "contar()">
-    
-    <div class ="square">
-        <header class="cabecalho">Let's count them up!</header>
-        <div id="temp"></div>
-        
+    <div class="centralizar">
+        <div class ="square">
+            <header class="cabecalho">Let's count them up!</header>
+            <div id="temp"></div>   
+        </div>
     </div>
     
     
