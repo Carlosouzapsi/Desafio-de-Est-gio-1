@@ -2,13 +2,53 @@
 <html lang ="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Contador Desafio Estágio</title>
-        <script type="text/javaScript">
+        <title>Desafio Estágio</title>
+        
+    <style>
+    
+        .cabecalho{
+            background-color: black;
+            color: white;
+            font-size: 12pt;
+            height:50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       
+        }
+        
+        .square{
+            width:  200px;
+            height: 200px;
+            background-color: green;
+        }
+        
+        
+        #temp{
+            font-size: 90pt;
+            color: white;
+            
+            
+        }
+        
+       
+        
+        
+        
+        
+        
+        
+    
+        
+    </style>
+    <script type="text/javaScript">
+        
+    //Javascript do contador!
         
         var contador = 0;
         function contar(){
             contador++;
-            console.log(contador);
+            temp.innerText=contador;
             if(contador == 99){
                 contador = 0;
             }
@@ -19,10 +59,20 @@
         
             
         
-        </script>
+    </script>
     </head>
     <body onload= "contar()">
-    <div class="quadrado"></div>
+    
+    <div class ="square">
+        <header class="cabecalho">Let's count them up!</header>
+        <div id="temp"></div>
+        
+        
+    </div>
+    <div>
+    
+    </div>
+    
     
     </body>
 </html>
