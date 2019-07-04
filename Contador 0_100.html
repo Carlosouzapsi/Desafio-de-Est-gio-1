@@ -5,19 +5,24 @@
         <title>Contador Desafio Estágio</title>
         <script type="text/javaScript">
         
-        
-        function contar(){  
-            for(i=1; i<100; i++){
-                console.log(i);
+        var contador = 0;
+        function contar(){
+            contador++;
+            console.log(contador);
+            if(contador == 99){
+                contador = 0;
             }
         }
+        setInterval(contar,1000);
             
+       
         
             
         
         </script>
     </head>
     <body onload= "contar()">
+    <div class="quadrado"></div>
     
     </body>
 </html>
